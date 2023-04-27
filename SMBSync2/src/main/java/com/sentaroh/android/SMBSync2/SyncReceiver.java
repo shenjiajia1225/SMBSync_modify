@@ -237,7 +237,7 @@ public class SyncReceiver extends BroadcastReceiver {
         Intent iw = new Intent();
         iw.setAction(SCHEDULER_INTENT_TIMER_EXPIRED);
         iw.setClass(mContext, SyncReceiver.class);
-        PendingIntent pi = PendingIntent.getBroadcast(mContext, 0, iw, PendingIntent.FLAG_NO_CREATE);
+        PendingIntent pi = PendingIntent.getBroadcast(mContext, 0, iw, PendingIntent.FLAG_IMMUTABLE);
         if (pi == null) {
             return false;
         } else {
