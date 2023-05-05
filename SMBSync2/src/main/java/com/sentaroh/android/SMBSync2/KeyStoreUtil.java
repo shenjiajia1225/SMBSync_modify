@@ -35,8 +35,8 @@ import android.util.Log;
 import com.drew.lang.Charsets;
 import com.sentaroh.android.Utilities.SafFile;
 
-import com.sentaroh.slf4j.Logger;
-import com.sentaroh.slf4j.LoggerFactory;
+import com.sentaroh.slf4j.Logger1;
+import com.sentaroh.slf4j.LoggerFactory1;
 
 import java.math.BigInteger;
 import java.security.KeyPairGenerator;
@@ -61,7 +61,7 @@ public class KeyStoreUtil {
     final static String CIPHER_TRANSFORMATION_ABOVE_API28 = "RSA/ECB/OAEPWithSHA-256AndMGF1Padding";
 //    final static boolean LOG_MESSAGE_ENABLED=false;
 
-    private static Logger slf4jLog = LoggerFactory.getLogger(KeyStoreUtil.class);
+    private static Logger1 slf4jLog = LoggerFactory1.getLogger(KeyStoreUtil.class);
 
     final static public String makeSHA1Hash(byte[] input) throws NoSuchAlgorithmException {
         MessageDigest md = MessageDigest.getInstance("SHA1");

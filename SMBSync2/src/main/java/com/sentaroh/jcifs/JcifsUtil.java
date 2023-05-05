@@ -29,12 +29,12 @@ import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-import com.sentaroh.slf4j.Logger;
-import com.sentaroh.slf4j.LoggerFactory;
+import com.sentaroh.slf4j.Logger1;
+import com.sentaroh.slf4j.LoggerFactory1;
 
 public class JcifsUtil {
 
-	private static final Logger log = LoggerFactory.getLogger(JcifsUtil.class);
+	private static final Logger1 log = LoggerFactory1.getLogger(JcifsUtil.class);
 	
     final static public boolean isValidIpAddress(String in_addr) {
         boolean result = false;

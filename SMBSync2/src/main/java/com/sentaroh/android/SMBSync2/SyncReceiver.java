@@ -37,8 +37,8 @@ import com.sentaroh.android.SMBSync2.Log.LogUtil;
 import com.sentaroh.android.Utilities.MiscUtil;
 import com.sentaroh.android.Utilities.StringUtil;
 
-import com.sentaroh.slf4j.Logger;
-import com.sentaroh.slf4j.LoggerFactory;
+import com.sentaroh.slf4j.Logger1;
+import com.sentaroh.slf4j.LoggerFactory1;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -52,7 +52,7 @@ import static com.sentaroh.android.SMBSync2.ScheduleConstants.SCHEDULER_LAST_SCH
 import static com.sentaroh.android.SMBSync2.ScheduleConstants.SCHEDULER_SCHEDULE_NAME_KEY;
 
 public class SyncReceiver extends BroadcastReceiver {
-    private static Logger slf4jLog = LoggerFactory.getLogger(SyncReceiver.class);
+    private static Logger1 slf4jLog = LoggerFactory1.getLogger(SyncReceiver.class);
 
     private static Context mContext = null;
 

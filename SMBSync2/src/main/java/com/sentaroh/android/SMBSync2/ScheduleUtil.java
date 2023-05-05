@@ -31,8 +31,8 @@ import android.widget.TextView;
 
 import com.sentaroh.android.Utilities.StringUtil;
 
-import com.sentaroh.slf4j.Logger;
-import com.sentaroh.slf4j.LoggerFactory;
+import com.sentaroh.slf4j.Logger1;
+import com.sentaroh.slf4j.LoggerFactory1;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -63,7 +63,7 @@ import static com.sentaroh.android.SMBSync2.ScheduleConstants.SCHEDULER_SYNC_WIF
 import static com.sentaroh.android.SMBSync2.ScheduleConstants.SCHEDULER_SYNC_WIFI_ON_BEFORE_SYNC_START_KEY;
 
 public class ScheduleUtil {
-    private static Logger slf4jLog = LoggerFactory.getLogger(ScheduleUtil.class);
+    private static Logger1 slf4jLog = LoggerFactory1.getLogger(ScheduleUtil.class);
 
     final static public ArrayList<ScheduleItem> loadScheduleData(Context c, GlobalParameters gp) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(c);

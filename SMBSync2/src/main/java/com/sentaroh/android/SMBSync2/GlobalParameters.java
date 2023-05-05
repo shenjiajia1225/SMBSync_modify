@@ -64,9 +64,9 @@ import com.sentaroh.android.Utilities.SafManager;
 import com.sentaroh.android.Utilities.ThemeColorList;
 import com.sentaroh.android.Utilities.ThreadCtrl;
 
-import com.sentaroh.slf4j.Logger;
-import com.sentaroh.slf4j.LoggerFactory;
-import com.sentaroh.slf4j.LoggerWriter;
+import com.sentaroh.slf4j.Logger1;
+import com.sentaroh.slf4j.LoggerFactory1;
+import com.sentaroh.slf4j.LoggerWriter1;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -301,7 +301,7 @@ public class GlobalParameters extends CommonGlobalParms {
     public SafManager safMgr = null;
 
     //private static LogStream logStream=null;//JCIFS logStream
-    private static Logger slf4jLog = LoggerFactory.getLogger(GlobalParameters.class);
+    private static Logger1 slf4jLog = LoggerFactory1.getLogger(GlobalParameters.class);
 
     public GlobalParameters() {
     }
@@ -959,7 +959,7 @@ public class GlobalParameters extends CommonGlobalParms {
         return pm.isInteractive();
     }
 
-    class JcifsNgLogWriter extends LoggerWriter {
+    class JcifsNgLogWriter extends LoggerWriter1 {
         private LogUtil mLu =null;
         public JcifsNgLogWriter(LogUtil lu) {
             mLu =lu;

@@ -65,8 +65,8 @@ import com.sentaroh.android.Utilities.ThemeUtil;
 import com.sentaroh.jcifs.JcifsUtil;
 
 import org.markdownj.MarkdownProcessor;
-import com.sentaroh.slf4j.Logger;
-import com.sentaroh.slf4j.LoggerFactory;
+import com.sentaroh.slf4j.Logger1;
+import com.sentaroh.slf4j.LoggerFactory1;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
@@ -110,7 +110,7 @@ import static com.sentaroh.android.SMBSync2.Constants.DEFAULT_PREFS_FILENAME;
 import static com.sentaroh.android.SMBSync2.Constants.GENERAL_IO_AREA_SIZE;
 
 public final class CommonUtilities {
-    private static Logger log= LoggerFactory.getLogger(CommonUtilities.class);
+    private static Logger1 log= LoggerFactory1.getLogger(CommonUtilities.class);
 
     private Context mContext = null;
     private LogUtil mLog = null;

@@ -37,8 +37,8 @@ import com.sentaroh.android.Utilities.StringUtil;
 import com.sentaroh.jcifs.JcifsException;
 import com.sentaroh.jcifs.JcifsFile;
 
-import com.sentaroh.slf4j.Logger;
-import com.sentaroh.slf4j.LoggerFactory;
+import com.sentaroh.slf4j.Logger1;
+import com.sentaroh.slf4j.LoggerFactory1;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -66,7 +66,7 @@ import static com.sentaroh.android.SMBSync2.Constants.SMBSYNC2_REPLACEABLE_KEYWO
 import static com.sentaroh.android.SMBSync2.Constants.SMBSYNC2_REPLACEABLE_KEYWORD_WEEK_NUMBER;
 
 public class SyncThreadArchiveFile {
-    private static final Logger log= LoggerFactory.getLogger(SyncThreadArchiveFile.class);
+    private static final Logger1 log= LoggerFactory1.getLogger(SyncThreadArchiveFile.class);
 
     static public int syncArchiveInternalToInternal(SyncThreadWorkArea stwa, SyncTaskItem sti,
                                                    String from_path, String to_path) {
